@@ -100,6 +100,6 @@ int main()
 		Sleep(1000);
 	}
 	//outtextxy(50, 50, "Hello World");
-	//system("pause");
+	system("pause");
 	return 0;
 }
