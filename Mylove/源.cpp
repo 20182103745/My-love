@@ -14,8 +14,8 @@ void InitImg()
 	for (int i = 0; i < 20; i++)
 	{
 		sprintf(buf, "images\\%d.jpg", i + 1);
-		loadimage(&img[i], buf, 30, 30);
-		loadimage(&img_Big[i], buf, 300, 200);
+		loadimage(&img[i], buf, 40, 40);
+		loadimage(&img_Big[i], buf, 310, 200);
 	}
 }
 int main()
@@ -95,7 +95,7 @@ int main()
 			putimage(arr[i].x, arr[i].y, &img[(i + add) % 20]);
 
 		}
-		putimage(270, 300, &img_Big[add % 20]);
+		putimage(270, 320, &img_Big[add % 20]);
 		add++;
 		Sleep(1000);
 	}
